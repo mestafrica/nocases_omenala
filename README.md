@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+###Welcome to OMENALA
 
-Things you may want to cover:
+An open source Rails application for monitoring and controlling company culture
 
-* Ruby version
+**Note** This project is still in development but if you want to see what stage it is kindly:
 
-* System dependencies
+* Make sure [Ruby](https://www.ruby-lang.org/en/) and [Rails](http://rubyonrails.org/) are installed
 
-* Configuration
+* Clone the repo `git clone https://github.com/mestafrica/nocases_omenala.git`
 
-* Database creation
+* Change directory into repo `cd nocases_omenala`
 
-* Database initialization
+* Install dependencies `bundle install`
 
-* How to run the test suite
+* Launch server `rails server`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Point browser to http://localhost:3000/
