@@ -1,0 +1,12 @@
+<h1>Register New Company</h1>
+
+<%= form_for :company, url: companies_path do |f| %>
+	Company Name <%= f.text_field :company_name %><br>
+	Number of Employees <%= f.number_field :number_of_employees %><br>
+	Logo <%= f.file_field :logo %><br>
+	Slogan <%= f.text_field :slogan %><br>
+	Cultural Values <%= f.text_field :cultural_values %><br>
+	Country <%= f.text_field :country %><br>
+	Phone Number <%= f.telephone_field :phone_number %><br>
+	<%= f.submit %>
+<% end %>
