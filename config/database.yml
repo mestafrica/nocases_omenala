@@ -9,8 +9,8 @@ default: &default
   pool: 5
   timeout: 5000
   database: companies
-  username: xl
-  password:
+  username: company_user
+  password: company_password
 
 development:
   <<: *default

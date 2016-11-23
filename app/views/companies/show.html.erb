@@ -1,3 +1,5 @@
+<h1><%= @company.company_name %></h1>
+
 <p>
 	<strong>Company:</strong>
 	<%= @company.company_name %>
@@ -26,3 +28,7 @@
 	<strong>Phone Number:</strong>
 	<%= @company.phone_number %>
 </p>
+
+
+<%= link_to 'Back', :back %>
+<%= link_to 'Edit', edit_company_path %>
