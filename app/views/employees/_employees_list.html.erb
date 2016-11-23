@@ -1,0 +1,20 @@
+<% if @company.employees.any? %>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Job Title</th>
+		</tr>
+		<% @company.employees.each do |employee| %>
+			<tr>
+				<td><%= employee.first_name << " " << employee.last_name %></td>
+				<td><%= employee.email %></td>
+				<td><%= employee.job_title %></td>
+			</tr>
+		<% end %>
+	</table>
+<% else %>
+	<p>
+		No employees have been registered for <strong><%= @company.company_name %></strong>
+	</p>
+<% end %>

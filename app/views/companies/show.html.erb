@@ -29,6 +29,16 @@
 	<%= @company.phone_number %>
 </p>
 
+<br>
 
-<%= link_to 'Back', :back %>
+<h3>Employees</h3>
+<%= render 'employees/employees_list' %>
+
+
+
+<h3>Add an Employee</h3>
+<%= render 'employees/add_employee_form' %>
+
+
+<%= link_to 'Back', :back %> |
 <%= link_to 'Edit', edit_company_path %>

@@ -1,4 +1,5 @@
 class Company < ApplicationRecord
+	has_many	:employees
 	validates :company_name, 	length: { minimum: 2 }
 	validates	:number_of_employees, numericality: { only_integer: true }
 	validates	:slogan, length: { minimum: 5 }
