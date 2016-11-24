@@ -1,5 +1,19 @@
 <h1>Welcome to OMENALA</h1>
 
+<h3>Our Companies</h3>
+
+<table>
+	<% @companies.each do |company| %>
+		<tr>
+			<th><%= link_to company.company_name, company_path(company) %></th>
+		</tr>
+	<% end %>
+</table>
+
 <p>
-	<%= link_to "Create Company", controller: "companies", action: "new" %>
+	<%=  %>
+</p>
+
+<p>
+	<%= link_to "New Company", controller: "companies", action: "new" %>
 </p>
